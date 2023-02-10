@@ -1,5 +1,6 @@
 // require() (common js é do node)
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
+import "./style.css";
 
 const passwordBtnEl = document.querySelector('button');
 const displayPasswordEl = document.querySelector('h2');
