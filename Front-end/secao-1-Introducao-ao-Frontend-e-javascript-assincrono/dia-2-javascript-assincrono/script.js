@@ -17,7 +17,7 @@ const resolvedPromise = () =>
     console.log(`O número gerado é ${response}`);
   });
  
-// Promessa rejeita ----------------
+// Promessa rejeitada ----------------
 const rejectedPromise = () =>
 new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -27,7 +27,7 @@ new Promise((resolve, reject) => {
 });
 rejectedPromise()
   .then((response) => { // Comando .then() para aguardar o tempo da promisse
-    console.log(`O número gerado é ${response}`);
+    console.log(`Não vai cair aqui`);
   })
   .catch((error) => { // Comando .catch() para capturar o erro
     console.log(error.message); // .message retorna apenas a mensagem do erro, sem dar erro no terminal
